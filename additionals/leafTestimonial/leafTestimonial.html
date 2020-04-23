@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf testimonial</title>
+    <style>
+        .leaf{
+            display: flex;
+            background-color: rgb(176, 229, 151);
+            width: 100px;
+            height: 90px;
+            color: #272727;
+            padding: 1%;
+            border-top-left-radius:50px;
+            border-bottom-right-radius:50px ;
+            border-top: 5px solid #00ca2c;
+            border-bottom: 5px solid #00ca2c;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        img{
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+        }
+        .textBox{
+            height: 50px;
+            width: 350px;
+            padding: 2%;
+            opacity: 0;
+        }
+
+        .leaf:hover{
+            width: 400px;
+            height: 150px;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .leaf:hover > .textBox{
+            opacity: 1  ;
+            transition: 1.5s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="leaf">
+            <div class="imgCirc">
+                <img src="../leafTestimonial/img/man1.jpg" alt="">
+            </div>
+            <div class="textBox">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore deserunt libero ullam eos voluptatem autem natus 
+                    tempora corporis dicta, placeat atque alias id? Sapiente 
+                    amet aliquid ducimus voluptas nostrum hic.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

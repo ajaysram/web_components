@@ -1,2 +1,2 @@
-# web_components
+# Web components
 Web components snippets
