@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <style>
+    .container
+    {
+        display: inline-block;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .top , .middle ,.bottom
+    {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .cross .top
+    {
+        transform: rotate(-45deg);
+        translate: -10px 10px;
+    }
+    .cross .middle
+    {
+        opacity: 0;
+    }
+    .cross .bottom
+    {
+        transform: rotate(45deg);
+        translate: -10px -10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container" onclick="myFunction(this)">
+        <div class="top"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </div>
+      <script>
+        function myFunction(bars) {
+          bars.classList.toggle("cross");
+        }
+        </script>
+</body>
+</html>
